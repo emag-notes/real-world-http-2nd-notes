@@ -9,7 +9,7 @@ import (
 
 func main() {
 	// 証明書を読み込む
-	cert, err := tls.LoadX509KeyPair("client.crt", "client.key")
+	cert, err := tls.LoadX509KeyPair("localhost-client.pem", "localhost-client-key.pem")
 	if err != nil {
 		panic(err)
 	}

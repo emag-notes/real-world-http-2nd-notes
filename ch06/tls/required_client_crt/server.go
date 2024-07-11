@@ -28,6 +28,6 @@ func main() {
 	}
 	http.HandleFunc("/", handler)
 	log.Println("start http listening :18443")
-	err := server.ListenAndServeTLS("server.crt", "server.key")
+	err := server.ListenAndServeTLS("localhost.pem", "localhost-key.pem")
 	log.Println(err)
 }
